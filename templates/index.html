@@ -1,0 +1,878 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>惠家有网上超市</title>
+		<link rel="stylesheet" href="{% static 'css/Css.css' %}" />
+		<script src="{% static 'js/jquery-1.12.0.js' %}"></script>
+		<script src="{% static 'js/js.js' %}"></script>
+{#        <script src="{% static 'js/rename_img_src.js' %}"></script>#}
+	</head>
+    <body>
+
+		<div class="wrap_top">
+			<div class="wrap_top_p">
+				<a class="f1">收藏</a>
+				<div class="f2">
+					<a>首页</a>
+					<a id="index_login" href="{% url 'HuiJiaYou:login' %}">请登录</a>
+					<a id="index_regist" href="{% url 'HuiJiaYou:register' %}">免费注册</a>
+					<span>|</span>
+					<font class="_font">购物车
+						<a>0</a>件
+					</font>
+					<a>我的家有</a>
+					<font class="_font">可用优惠券
+						<a>0</a>张</font>
+					<a>我的收藏</a>
+					<span>|</span>
+					<label class="iphone">
+					<a id="f2_a1">手机版<div class="f1_div"><img style="width: 5px;height: 5px;display: block; position: absolute;top: -10px;" src="{% static 'img/biao.png' %}"><img src="{% static 'img/ewm011.jpg' %}"><em>惠家有APP</em></div></a>
+				</label>
+					<label class="wx">
+					<a id="f2_a2">微信版<div class="f2_div"><img src="{% static 'img/ewm011.jpg' %}"><em>惠家有微信</em></div></a>
+				</label>
+				</div>
+			</div>
+		     <div class="head">
+		     	<div class="head_top">
+		     		<img src="{% static 'img/logo.png' %}">
+		     		<div class="search">
+		     			<input type="text " class="head_top_input">
+		     		    <input type="button" class="head_top_buttom" value="搜索">
+		     		    <p>
+		     		    	<a id="active">洗衣液</a>
+		     		    	<a>螺丝刀</a>
+		     		    	<a>斧头牌</a>
+		     		    	<a>韩束</a>
+		     		    	<a>无痕内衣</a>
+		     		    	<a>薰衣草</a>
+		     		    	<a>双立人</a>
+		     		    	<a>申鸿</a>
+		     		    	<a>海参</a>
+		     		    </p>
+		     		</div>
+		     		<div class="fr" id="Car">
+		     			<img src="{% static 'img/car.png' %}">
+		     			<a href="{% url 'HuiJiaYou:showCart' %}">我的购物车
+		     				<i>0</i>
+		     			</a>
+		     			<div class="ware">
+		     				<img src="{% static 'img/car2.png' %}">
+		     				<p>购物车中还没有商品，赶紧去选购吧</p>
+		     			</div>
+		     		</div>
+		     	</div>
+                 <div class="head_bottom">
+
+                 	<span id="navlist">
+                 		全部商品分类
+                 		<div class="navlists">
+                 			<a href="#">海外购</a>
+                 			<a href="#">生活电器</a>
+                 			<a href="#">品质厨房</a>
+                 				<a href="#">厨房电器</a>
+                 				<a href="#">生活家居</a>
+                 				<a href="#">家纺</a>
+                 				<a href="#">服装服饰</a>
+                 				<a href="#">箱包配饰</a>
+                 				<a href="#">美妆个护</a>
+                            	<a href="#">食品饮料</a>
+                 		       	<a href="#">运动健康</a>
+                 		       		<a href="#">3c数码</a>
+                 		       			<a href="#">宠物用法</a>
+                 		       			<span href="#" class="last_a"></span>
+                 		</div>
+                 	</span>
+                    <ul class="navlists_ul">
+                    	<li><a href="#">首页</a></li>
+                    	<li><a href="#">TV直播</a></li>
+                    	<li><a href="#">品牌惠</a></li>
+                    	<li><a href="#">惠家有APP</a></li>
+                    	<li><a href="#">家有尊享</a></li>
+
+                    </ul>
+
+
+                 	</div>
+		     </div>
+
+		     <div class="main">
+		     	<div class="main_top">
+		     		<div class="main_top_1">
+		     			<div class="lunbo">
+		     				<ul id="lunbo_list">
+
+		     				</ul>
+		     				<div id="lunbo_list2">
+		     				<ul>
+
+		     				</ul>
+		     				</div>
+		     				<div id="lunbo_list_left">&lt;</div>
+		     				<div id="lunbo_list_right">&gt;</div>
+		     			</div>
+		     			<div class="ad1">
+		     		    	<img src="{% static 'img/b2.jpg' %}">
+		     		    </div>
+		     		    <div class="ad2">
+		     		    	<img src="{% static 'img/b4.jpg' %}">
+		     		    </div>
+		     		</div>
+		     		<div class="main_top_2">
+		     			<div class="main_right1">
+		     				<span><img src="{% static 'img/main_right1.png' %}"></span>
+		     				<p>hi！欢迎来到惠家有</p>
+		     				<a id="index_login2" href="{% url 'HuiJiaYou:login' %}">登 录</a>
+		     				<i id="index_regist2"><a href="{% url 'HuiJiaYou:register' %}">免费注册</a></i>
+		     			</div>
+		     			<div class="main_right2">
+		     				<div><img src="{% static 'img/mobile1.png' %}"> <p><b>4008-678-210</b></p></div>
+		     				<ul>
+		     					<li>
+		     						<a>
+		     							<i class="i1"></i>
+		     							直播<br>节目表
+		     						</a>
+		     					</li>
+		     					<li>
+		     						<a>
+		     							<i class="i2"></i>
+		     							掌上<br>购物
+		     						</a>
+		     					</li>
+		     					<li>
+		     						<a>
+		     							<i class="i3"></i>
+		     							物流<br>查询
+		     						</a>
+		     					</li>
+		     					<li>
+		     						<a>
+		     							<i class="i4"></i>
+		     							会员<br>中心
+		     						</a>
+		     					</li>
+		     				</ul>
+		     			</div>
+		     			<div class="main_right3">
+		     				<h2>今日秒杀     10/20点准时开抢</h2>
+		     				<ul>
+		     					<li><a><img src="{% static 'img/b1.jpg' %}"><i>立即抢购</i></a></li>
+		     					<li><a><img src="{% static 'img/b2.jpg' %}"><i>立即抢购</i></a></li>
+		     				</ul>
+		     			</div>
+		     		</div>
+		     	</div>
+		     	<div class="live_list">
+		     		<div class="live_list_top">
+		     			<h2>TV直播-已省30元</h2>
+		     		</div>
+		     	    <div class="live_list_bottom">
+		     	    	<ul id="live_list_bottom">
+
+		     	    	</ul>
+		     	    	<a class="prev1">&lt;</a>
+		     	    	<a class="prev2">&gt;</a>
+		     	    </div>
+		     	</div>
+		     	<div class="panic_list">
+		     	    <div class="panic_list_top">
+		     			<h2>限时抢购
+		     			<font>距离本次结束还有：<i>6</i>时<i>22</i>分<i>54</i>秒
+		     			</font>
+		     			</h2>
+		     		</div>
+		     	    <div class="panic_list_bottom">
+		     	    	<ul>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img id="img1" src="{% static 'img/icon.png' %}">
+		     	    				<img src="{% static 'img/6.jpg' %}">
+		     	    				<span>1.9折</span>
+		     	    				<b>澳大利亚·Swisse葡萄籽精华片+天然血橙精</b>
+		     	    				<font>￥89<i>￥469</i></font>
+		     	    				<strong>立即抢购</strong>
+		     	    			</a>
+		     	    		</li>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img src="{% static 'img/7.jpg' %}">
+		     	    				<span>1.9折</span>
+		     	    				<b>直降123元！法国威尔斯鹰窖藏干红葡萄酒9</b>
+		     	    				<font>￥89<i>￥469</i></font>
+		     	    				<strong>立即抢购</strong>
+		     	    			</a>
+		     	    		</li>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img src="{% static 'img/8.jpg' %}">
+		     	    				<span>1.9折</span>
+		     	    				<b>卓蓝雅 老姜王洗发水800ml 1号A</b>
+		     	    				<font>￥89<i>￥469</i></font>
+		     	    				<strong>立即抢购</strong>
+		     	    			</a>
+		     	    		</li>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img src="{% static 'img/9.jpg' %}">
+		     	    				<span>1.9折</span>
+		     	    				<b>智佳生活 电动旋转拖把 赠送4个拖把头</b>
+		     	    				<font>￥89<i>￥469</i></font>
+		     	    				<strong>立即抢购</strong>
+		     	    			</a>
+		     	    		</li>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img src="{% static 'img/10.jpg' %}">
+		     	    				<span>1.9折</span>
+		     	    				<b>卓蓝雅 老姜王洗发水800ml 1号A</b>
+		     	    				<font>￥89<i>￥469</i></font>
+		     	    				<strong>立即抢购</strong>
+		     	    			</a>
+		     	    		</li>
+		     	    	</ul>
+		     	    	<a class="panic_list_bottom_le">&lt;</a>
+		     	    	<a class="panic_list_bottom_ri">&gt;</a>
+		     	    </div>
+		     	</div>
+		        <div class="floor">
+		        	<div class="f1oor_f1">
+		        		<div class="hd">
+		        			<h2>1F 品质家园</h2>
+		        		</div>
+		        		<div class="bd">
+		        			<div class="left">
+		        				<b><a><img src="{% static 'img/11.jpg' %}"></a></b>
+		        				<p>
+		        					<a><img src="{% static 'img/12.jpg' %}"> </a>
+		        					<a><img src="{% static 'img/13.jpg' %}"></a>
+		        					<a><img src="{% static 'img/14.jpg' %}"></a>
+		        					<a><img src="{% static 'img/15.jpg' %}"></a>
+		        					<a><img src="{% static 'img/16.jpg' %}"></a>
+		        					<a><img src="{% static 'img/17.jpg' %}"></a>
+		        				</p>
+		        			</div>
+		        			<div class="right">
+		        				<div class="focus">
+		        					<ul class="focus_hd">
+		        						<li>
+		        							<a><img src="{% static 'img/18.jpg' %}"></a>
+		        						</li>
+		        					</ul>
+		        				    <a class="focus_left">&lt;</a>
+		        				    <a class="focus_right">&gt;</a>
+		        				</div>
+
+		        				<div class="ad3">
+		        					<a><img src="{% static 'img/19.jpg' %}"></a>
+		        				</div>
+		        				<div class="ad3"><a><img src="{% static 'img/2.jpg' %}"></a></div>
+		        				<div class="ad3"><a><img src="{% static 'img/20.jpg' %}"></a></div>
+		        			</div>
+		        		</div>
+		        	</div>
+		            <div class="floor_f2">
+		            	<div>
+		            		<h2>本月热销榜</h2>
+		            	</div>
+		            	<ul>
+		            		<li>
+		            			<a>
+		            				<i class="i5">1</i>
+		            				<img src="{% static 'img/22.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i6">2</i>
+		            				<img src="{% static 'img/23.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i7">3</i>
+		            				<img src="{% static 'img/24.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/25.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/26.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            	</ul>
+		            </div>
+		        </div>
+		         <div class="floor">
+		        	<div class="f1oor_f1">
+		        		<div class="hd">
+		        			<h2>2F 美妆个护</h2>
+		        		</div>
+		        		<div class="bd">
+		        			<div class="left">
+		        				<b><a><img src="{% static 'img/27.jpg' %}"></a></b>
+		        				<p>
+		        					<a><img src="{% static 'img/28.jpg' %}"> </a>
+		        					<a><img src="{% static 'img/29.jpg' %}"></a>
+		        					<a><img src="{% static 'img/30.jpg' %}"></a>
+		        					<a><img src="{% static 'img/31.jpg' %}"></a>
+		        					<a><img src="{% static 'img/32.jpg' %}"></a>
+		        					<a><img src="{% static 'img/33.jpg' %}"></a>
+		        				</p>
+		        			</div>
+		        			<div class="right">
+		        				<div class="focus">
+		        					<ul class="focus_hd">
+		        						<li>
+		        							<a><img src="{% static 'img/34.jpg' %}"></a>
+		        						</li>
+		        					</ul>
+		        				    <a class="focus_left">&lt;</a>
+		        				    <a class="focus_right">&gt;</a>
+		        				</div>
+
+		        				<div class="ad3">
+		        					<a><img src="{% static 'img/35.jpg' %}"></a>
+		        				</div>
+		        				<div class="ad3"><a><img src="{% static 'img/36.jpg' %}"></a></div>
+		        				<div class="ad3"><a><img src="{% static 'img/37.jpg' %}"></a></div>
+		        			</div>
+		        		</div>
+		        	</div>
+		            <div class="floor_f2">
+		            	<div>
+		            		<h2>本月热销榜</h2>
+		            	</div>
+		            	<ul>
+		            		<li>
+		            			<a>
+		            				<i class="i5">1</i>
+		            				<img src="{% static 'img/38.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i6">2</i>
+		            				<img src="{% static 'img/39.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i7">3</i>
+		            				<img src="{% static 'img/40.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/41.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/42.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            	</ul>
+		            </div>
+		        </div>
+		         <div class="floor">
+		        	<div class="f1oor_f1">
+		        		<div class="hd">
+		        			<h2>3F 服装美饰</h2>
+		        		</div>
+		        		<div class="bd">
+		        			<div class="left">
+		        				<b><a><img src="{% static 'img/43.jpg' %}"></a></b>
+		        				<p>
+		        					<a><img src="{% static 'img/44.jpg' %}"> </a>
+		        					<a><img src="{% static 'img/45.jpg' %}"></a>
+		        					<a><img src="{% static 'img/46.jpg' %}"></a>
+		        					<a><img src="{% static 'img/47.jpg' %}"></a>
+		        					<a><img src="{% static 'img/48.jpg' %}"></a>
+		        					<a><img src="{% static 'img/49.jpg' %}"></a>
+		        				</p>
+		        			</div>
+		        			<div class="right">
+		        				<div class="focus">
+		        					<ul class="focus_hd">
+		        						<li>
+		        							<a><img src="{% static 'img/50.jpg' %}"></a>
+		        						</li>
+		        					</ul>
+		        				    <a class="focus_left">&lt;</a>
+		        				    <a class="focus_right">&gt;</a>
+		        				</div>
+
+		        				<div class="ad3">
+		        					<a><img src="{% static 'img/51.jpg' %}"></a>
+		        				</div>
+		        				<div class="ad3"><a><img src="{% static 'img/52.jpg' %}"></a></div>
+		        				<div class="ad3"><a><img src="{% static 'img/53.jpg' %}"></a></div>
+		        			</div>
+		        		</div>
+		        	</div>
+		            <div class="floor_f2">
+		            	<div>
+		            		<h2>本月热销榜</h2>
+		            	</div>
+		            	<ul>
+		            		<li>
+		            			<a>
+		            				<i class="i5">1</i>
+		            				<img src="{% static 'img/54.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i6">2</i>
+		            				<img src="{% static 'img/55.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i7">3</i>
+		            				<img src="{% static 'img/56.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/57.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/58.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            	</ul>
+		            </div>
+		        </div>
+		          <div class="floor">
+		        	<div class="f1oor_f1">
+		        		<div class="hd">
+		        			<h2>4F 食品保健</h2>
+		        		</div>
+		        		<div class="bd">
+		        			<div class="left">
+		        				<b><a><img src="{% static 'img/59.jpg' %}"></a></b>
+		        				<p>
+		        					<a><img src="{% static 'img/60.jpg' %}"> </a>
+		        					<a><img src="{% static 'img/61.jpg' %}"></a>
+		        					<a><img src="{% static 'img/62.jpg' %}"></a>
+		        					<a><img src="{% static 'img/63.jpg' %}"></a>
+		        					<a><img src="{% static 'img/64.jpg' %}"></a>
+		        					<a><img src="{% static 'img/65.jpg' %}"></a>
+		        				</p>
+		        			</div>
+		        			<div class="right">
+		        				<div class="focus">
+		        					<ul class="focus_hd">
+		        						<li>
+		        							<a><img src="{% static 'img/66.jpg' %}"></a>
+		        						</li>
+		        					</ul>
+		        				    <a class="focus_left">&lt;</a>
+		        				    <a class="focus_right">&gt;</a>
+		        				</div>
+
+		        				<div class="ad3">
+		        					<a><img src="{% static 'img/67.jpg' %}"></a>
+		        				</div>
+		        				<div class="ad3"><a><img src="{% static 'img/68.jpg' %}"></a></div>
+		        				<div class="ad3"><a><img src="{% static 'img/69.jpg' %}"></a></div>
+		        			</div>
+		        		</div>
+		        	</div>
+		            <div class="floor_f2">
+		            	<div>
+		            		<h2>本月热销榜</h2>
+		            	</div>
+		            	<ul>
+		            		<li>
+		            			<a>
+		            				<i class="i5">1</i>
+		            				<img src="{% static 'img/70.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i6">2</i>
+		            				<img src="{% static 'img/71.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i7">3</i>
+		            				<img src="{% static 'img/72.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/73.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/74.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            	</ul>
+		            </div>
+		        </div>
+		           <div class="floor">
+		        	<div class="f1oor_f1">
+		        		<div class="hd">
+		        			<h2>5F 生活电器</h2>
+		        		</div>
+		        		<div class="bd">
+		        			<div class="left">
+		        				<b><a><img src="{% static 'img/75.jpg' %}"></a></b>
+		        				<p>
+		        					<a><img src="{% static 'img/76.jpg' %}"> </a>
+		        					<a><img src="{% static 'img/77.jpg' %}"></a>
+		        					<a><img src="{% static 'img/78.jpg' %}"></a>
+		        					<a><img src="{% static 'img/79.jpg' %}"></a>
+		        					<a><img src="{% static 'img/80.jpg' %}"></a>
+		        					<a><img src="{% static 'img/81.jpg' %}"></a>
+		        				</p>
+		        			</div>
+		        			<div class="right">
+		        				<div class="focus">
+		        					<ul class="focus_hd">
+		        						<li>
+		        							<a><img src="{% static 'img/82.jpg' %}"></a>
+		        						</li>
+		        					</ul>
+		        				    <a class="focus_left">&lt;</a>
+		        				    <a class="focus_right">&gt;</a>
+		        				</div>
+
+		        				<div class="ad3">
+		        					<a><img src="{% static 'img/83.jpg' %}"></a>
+		        				</div>
+		        				<div class="ad3"><a><img src="{% static 'img/84.jpg' %}"></a></div>
+		        				<div class="ad3"><a><img src="{% static 'img/85.jpg' %}"></a></div>
+		        			</div>
+		        		</div>
+		        	</div>
+		            <div class="floor_f2">
+		            	<div>
+		            		<h2>本月热销榜</h2>
+		            	</div>
+		            	<ul>
+		            		<li>
+		            			<a>
+		            				<i class="i5">1</i>
+		            				<img src="{% static 'img/86.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i6">2</i>
+		            				<img src="{% static 'img/87.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i class="i7">3</i>
+		            				<img src="{% static 'img/88.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/89.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            		<li>
+		            			<a>
+		            				<i>1</i>
+		            				<img src="{% static 'img/90.jpg' %}">
+		            				<b>迪士尼大容量百纳箱6件组（粉色、红色任选）</b>
+		            				<em>￥299</em>
+		            			</a>
+		            		</li>
+		            	</ul>
+		            </div>
+		        </div>
+		           	<div class="live_list">
+		     		<div class="live_list_top">
+		     			<h2>猜你喜欢</h2>
+		     		</div>
+		     	    <div class="live_list_bottom">
+		     	    	<ul>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img src="{% static 'img/91.jpg' %}">
+		     	    				<span>正在直播...</span>
+		     	    				<b>优树 飞织全气垫女士运动鞋（颜色可选）</b>
+		     	    				<font>
+		     	    					￥269
+		     	    					<i>￥449</i>
+		     	    				</font>
+		     	    			</a>
+		     	    		</li>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img src="{% static 'img/92.jpg' %}">
+		     	    				<span>正在直播...</span>
+		     	    				<b>晟麦冷榨亚麻籽油750ml*10瓶</b>
+		     	    				<font>
+		     	    					￥269
+		     	    					<i>￥449</i>
+		     	    				</font>
+		     	    			</a>
+		     	    		</li>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img src="{% static 'img/93.jpg' %}">
+		     	    				<span>正在直播...</span>
+		     	    				<b>美核家 枣夹核桃抢购组 枣夹核桃仁200g*10袋...</b>
+		     	    				<font>
+		     	    					￥269
+		     	    					<i>￥449</i>
+		     	    				</font>
+		     	    			</a>
+		     	    		</li>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img src="{% static 'img/94.jpg' %}">
+		     	    				<span>正在直播...</span>
+		     	    				<b>美核家 枣夹核桃抢购组 枣夹核桃仁200g*10袋...</b>
+		     	    				<font>
+		     	    					￥269
+		     	    					<i>￥449</i>
+		     	    				</font>
+		     	    			</a>
+		     	    		</li>
+		     	    		<li>
+		     	    			<a>
+		     	    				<img src="{% static 'img/95.jpg' %}">
+		     	    				<span>正在直播...</span>
+		     	    				<b>美核家 枣夹核桃抢购组 枣夹核桃仁200g*10袋...</b>
+		     	    				<font>
+		     	    					￥269
+		     	    					<i>￥449</i>
+		     	    				</font>
+		     	    			</a>
+		     	    		</li>
+		     	    	</ul>
+		     	    	<a class="prev1">&lt;</a>
+		     	    	<a class="prev2">&gt;</a>
+		     	    </div>
+		     	</div>
+		     </div>
+
+
+
+
+		     <div class="footer">
+		     	<ul class="warrant">
+		     		<li>
+		     			<img src="{% static 'img/buttom0.png' %}">
+		     			<b>100%正品保障</b>
+		     			<i>质量有保障</i>
+		     		</li>
+		     		<li>
+		     			<img src="{% static 'img/buttom2.png' %}">
+		     			<b>在线支付 全场包邮</b>
+		     			<i>送货上门</i>
+		     		</li>
+		     		<li>
+		     			<img src="{% static 'img/buttom3.png' %}">
+		     			<b>支持银联刷卡付款</b>
+		     			<i>付款更安全</i>
+		     		</li>
+		     		<li>
+		     			<img src="{% static 'img/buttom4.png' %}">
+		     			<b>货到付款 开箱验货</b>
+		     			<i>满意才收货</i>
+		     		</li>
+		     		<li>
+		     			<img src="{% static 'img/buttom5.png' %}">
+		     			<b>7x24小时人工服务</b>
+		     			<i>微笑无时无刻 4008-678-210</i>
+		     		</li>
+		     	</ul>
+		        <div class="foote">
+		        	<div class="foote_left">
+		        		<dl>
+		        			<dt>
+		        				<a href="#">关于我们</a>
+		        				</dt><dd><a href="#">公司介绍</a></dd>
+		        				<dd><a href="#">招聘信息</a></dd>
+		        				<dd><a href="#">联系我们</a></dd>
+		        				<dd><a href="#">用户隐私条款</a></dd>
+
+		        		</dl>
+		        	    <dl>
+		        	    	<dt>
+		        	    		<a href="#">订购指南</a>
+		        	    		</dt><dd><a href="#">交易条款</a></dd>
+		        	    		<dd><a href="#">注册/购物流程</a></dd>
+		        	    		<dd><a href="#">退/换货</a></dd>
+		        	    		<dd><a href="#">积分说明</a></dd>
+		        	    		<dd><a href="#">发票指南</a></dd>
+		        	    		<dd><a href="#">会员制度说明</a></dd>
+
+		        	    </dl>
+		        	    <dl>
+		        	    	<dt>
+		        	    		<a href="#">配送服务</a>
+		        	    		</dt><dd><a href="#">配送区域</a></dd>
+		        	    		<dd><a href="#">配送时间</a></dd>
+		        	    		<dd><a href="#">验货与签收</a></dd>
+
+
+		        	    </dl>
+		        	    <dl>
+		        	    	<dt>
+		        	    		<a href="#">支付方式</a>
+		        	    		</dt><dd><a href="#">网上支付</a></dd>
+		        	    		<dd><a href="#">货到付款</a></dd>
+
+		        	    </dl>
+		        	    <dl>
+		        	    	<dt>
+		        	    		<a href="#">合作专区</a>
+		        	    		</dt><dd><a href="#">成为供应商</a></dd>
+		        	    		<dd><a href="#">供应商系统</a></dd>
+		        	    		<dd><a href="#">合作伙伴</a></dd>
+
+		        	    </dl>
+		        	</div>
+		        	<div class="foote_right">
+		        		<ul>
+		        			<li>
+		        				<img src="{% static 'img/ewm011.jpg' %}">
+		        				惠家有APP
+		        			</li>
+		        			<li>
+		        				<img src="{% static 'img/ewm022.jpg' %}">
+		        				惠家有微信
+		        			</li>
+		        		</ul>
+		        	    <p> <img src="{% static 'img/buttom_ph.png' %}">
+		        	    	<b>4008-678-210</b>
+		        	    	<i>客服 7X24小时  (全年无休)</i>
+		        	    </p>
+		        	</div>
+		        </div>
+		        <div class="foot">
+		        	<div class="smallfoot">
+		        		<p>友情链接:
+		        			<a href="http://www.sj001.com/" target="_blank" num="202051-1"> 南京手机报价</a>
+		        			<a href="http://www.e.cn" target="_blank" num="202051-2">竞拍</a>
+		        			<a href="http://www.aolaigo.com/ " target="_blank" num="202051-3">奥莱购</a>
+		        			<a href="http://wiki.smzdm.com/" target="_blank" num="202051-4">商品百科</a>
+		        		</p>
+		        	     <p>
+		        	     	Copyright © 2008-2013 huijiayou.cn
+		        	     	<a num="202050-31">家有购物集团有限公司北京分公司</a>
+		        	     	 版权所有 黔ICP备13002365号  增值电信业务经营许可证：黔B2-20120036
+		        	     </p>
+		        	</div>
+
+		        </div>
+		     </div>
+		     <ul class="drift">
+		     	<li class="li_1">
+
+		     		<a href="#">
+		     			<img src="{% static 'img/slide1.png' %}">
+		     			<div class="drift_1">
+		     				<img src="{% static 'img/ewm011.jpg' %}">
+		     			<em>惠家有APP</em>
+		     			</div>
+
+		     		</a>
+		     	</li>
+		     	<li class="li_2">
+
+		     		<a href="#">
+		     			<img src="{% static 'img/slide2.png' %}">
+		     			<div class="drift_2">
+		     			<img src="{% static 'img/ewm022.jpg' %}">
+		     			<em>惠家有微信</em>
+		     			</div>
+		     		</a>
+		     	</li>
+		     	<li class="li_3">
+
+		     		<a href="#">
+		     			<img src="{% static 'img/slide3.png' %}">
+		     		</a>
+		     		</li>
+		     		<a href="#">
+		     			<img class="drift_img" src="{% static 'img/slide4.png' %}">
+		     		</a>
+
+
+
+</ul></div>
+    </body>
+</html>
