@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册失败</title>
+    <script src="{% static 'js/jquery-1.12.3.min.js' %}"></script>
+
+    <style type="text/css">
+        *{margin: 0;padding: 0}
+        .d1{width:400px;height: 40px;color: white;font-size: 40px;margin:100px auto}
+        .d2{position:relative;left: 500px;top:0}
+        a{color: red;font-size: 40px;text-decoration: none}
+    </style>
+</head>
+<body>
+    <div class="d1">您输入的验证码不对哦 ^_^</div>
+    <div class="d2">
+        <a href="{% url 'HuiJiaYou:register' %}">点此回到注册页面</a>
+    </div>
+    <script type="text/javascript">
+        $("body").click(function ()
+            {
+                var r = parseInt(Math.random()*256);
+                var g = parseInt(Math.random()*256);
+                var b = parseInt(Math.random()*256);
+                $(this).css("background",`rgb(${r},${g},${b})`)
+
+            });
+            setInterval(function ()
+            {
+                $("body").trigger("click")
+
+            },100)
+
+
+
+    </script>
+</body>
+</html>

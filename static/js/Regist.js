@@ -25,7 +25,6 @@ $(function(){
 	    			"blur":function(){
 	    			var IsBy=$.idcode.validateCode()
 	    			if(IsBy){
-	    			
 	    			}
 	    			else{
 	    			
@@ -81,14 +80,14 @@ $(function(){
 					    return;//如果密码用户名为空  则不提交
 	    			}
 	    			
-	    		//Regist 注册开始啦
+	    		// Regist 注册开始啦
 	    		var users=$.cookie("users")?JSON.parse($.cookie("users")):[];
 	    		for(var i=0;i<users.length;i++){
 	    			if(users[i].name==$("#li1").val()){
 	    				$("#li1").next().show();
 					    $("#li1_em").html("亲！该账号已经存在哟");
 					    return;
-	    			}	
+	    			}
 	    		}
 	    		var user={
 	    				name:$("#li1").val(),
@@ -98,12 +97,12 @@ $(function(){
 	    			$.cookie("users",JSON.stringify(users),{expires:7,path:"/"});
 	    			console.log($.cookie("users"));
 	    		   var timer=setInterval(function(){
-	    		   	location.href="login.html";
+	    		   	location.href="/login/";
 	    		   },2000)
-	    		   alert("注册成功，5秒后跳转至登录页面！")
-	    			
+	    		   alert("注册成功！")
+
 	    		})
 	    		$("#Aledy").click(function(){
-	    				location.href="login.html";
+	    				location.href="/login/";
 	    			})
 })

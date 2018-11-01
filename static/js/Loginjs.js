@@ -8,7 +8,7 @@ $(function(){
 	    				for(var i=0;i<users.length;i++){
 	    					if(users[i].name==$("#Login_name").val()&&users[i].passwd==$("#Login_pwd").val()){
 	    						alert("It's ok")
-	    						location.href="index.html";
+	    						location.href="/index/";
 	    						isExist=true;
 	    					}
 	    				}

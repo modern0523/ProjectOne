@@ -6,9 +6,9 @@
 		<meta charset="UTF-8">
 		<title>登录</title>
 		 <script src="{% static 'js/jquery-1.12.3.min.js' %}"></script>
-		<script src="{% static 'js/jquery.cookie.js' %}"></script>
-		<script src="{% static 'js/jquery.idcode.js' %}"></script>
-		 <script src="{% static 'js/Loginjs.js' %}"></script>
+{#		<script src="{% static 'js/jquery.cookie.js' %}"></script>#}
+{#		<script src="{% static 'js/jquery.idcode.js' %}"></script>#}
+{#		 <script src="{% static 'js/Loginjs.js' %}"></script>#}
         <link href="{% static 'css/goodsCss.css' %}"  rel="stylesheet" type="text/css"/>
 {#	    <script src="{% static 'js/rename_img_src.js' %}"></script>#}
     </head>
@@ -117,18 +117,20 @@
 	         				<i>快捷登录</i>
 	         			</a>
 	         		</div>
-	         	    <div class="Login_bd">
+                    <form action="{% url 'HuiJiaYou:login' %}" method="post">
+                        {% csrf_token %}
+	         	        <div class="Login_bd">
 	         	    	<font></font>
 	         	    	<ul>
 	         	    		<li class="Login_bd_l1">
 	         	    			<i></i>
-	         	    			<input type="text" id="Login_name" placeholder="请输入11位有效的手机号">
-	         	    			<em></em>
+	         	    			<input type="text" id="Login_name" name="login_tel" placeholder="请输入11位有效的手机号">
+	         	    			<em>456</em>
 	         	    		</li>
 	         	    		<li class="Login_bd_l2">
 	         	    			<i></i>
-	         	    			<input type="password" id="Login_pwd" placeholder="请输入密码">
-	         	    			<em></em>
+	         	    			<input type="password" id="Login_pwd" name="login_password"  placeholder="请输入密码">
+	         	    			<em>123</em>
 	         	    		</li>
 	         	    		<li class="Login_bd_l3">
 	         	    			<label>
@@ -139,9 +141,10 @@
 	         	    		</li>
 	         	    	</ul>
 	         	    	<p>
-	         	    		<a id="Login">登录</a>
+	         	    		<input type="submit" id="Login" value="登录">
 	         	    	</p>
 	         	    </div>
+                    </form>
 	         	    <div class="Login_bd2">
 
 	         	    	<font class="font2">电视激活用户由此登录</font>

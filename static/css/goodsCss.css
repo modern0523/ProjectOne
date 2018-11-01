@@ -97,7 +97,7 @@
 .number label a{display: block;width: 15px;height: 20px;float: left;cursor: pointer;}
 .number_a1{background: url(../img/jia_jian.png) no-repeat;}
 .number_a2{background: url(../img/jia_jian.png) no-repeat;background-position: 0 -20px;}
-.number label input{width: 44px;border-left: 1px solid #d6d5d3;float: left;text-align: center;line-height: 20px;height: 20px;color: ##666;font:12px "microsoft yahei";border-right: 1px solid #d6d5d3;}
+.number label input{width: 44px;border-left: 1px solid #d6d5d3;float: left;text-align: center;line-height: 20px;height: 20px;color: #666666;font:12px "microsoft yahei";border-right: 1px solid #d6d5d3;}
 .list{height: 20px;line-height: 20px;width: 550px;padding: 7px 0 19px 0;}
 .s1{display: block;float: left;margin-right: 32px;padding-left: 25px;color: #333;font:14px "microsoft yahei";background: url(../img/icon_1.png) no-repeat;}
 .s2{display: block;float: left;margin-right: 32px;padding-left: 25px;color: #333;font:14px "microsoft yahei";background: url(../img/icon_1.png) no-repeat;background-position: 0 -20px;}
@@ -130,7 +130,7 @@
 .li5 input{width: 130px;}
 .li5 button,.Login_bd2_l1 button{width: 110px;height: 40px;border: none;text-align: center;line-height: 40px;background: #dc0f50;color: #fff;font: 14px "microsoft yahei";float: left;margin-right: 15px;cursor: pointer;}
 .Regist_main_1 p{overflow: hidden;margin-top: -15px;text-align: right;padding-right: 193px;height: 48px;padding-top:20px; color: #666;font: 14px "microsoft yahei";}
-.p2 a,.Login_bd2 p a{display: block;background: #dc0f50;text-align: center;color: #fff;font: 18px "microsoft yahei";width: 305px;height: 40px;line-height: 40px;float: right;cursor: pointer;}
+.p2 input,.Login_bd2 p a{display: block;background: #dc0f50;text-align: center;color: #fff;font: 18px "microsoft yahei";width: 305px;height: 40px;line-height: 40px;float: right;cursor: pointer;}
 .Regist_main_1 font {display: block;text-align: right;padding-right: 193px;}
 .Regist_main_1 font a{color: #666;text-decoration: underline;font: 16px "microsoft yahei";float: right;cursor: pointer;}
 .Regist_main_2{float: right;position: absolute;top: 80px;right: 60px;}
@@ -185,7 +185,6 @@
 	margin:0px 0px 0px 4px;
 	cursor:pointer;	
 }
-/*引用验证码插件样式*/
 
 /*Regist_main结束*/
 /*Login_main开始*/
@@ -208,12 +207,13 @@
 .Login_bd_l3 label a,.Login_bd2_l3 label a{cursor: pointer;}
 .Login_bd_l3 label input,.Login_bd2_l3 label input{width: 13px;height: 13px;border: none;float: left;margin-top: 5px;margin-right: 5px;padding: 0;}
 .Login_bd p,.Login_bd2 p{padding-right: 70px;}
-.Login_bd p a{cursor: pointer; display: block;background: #dc0f50;text-align: center;color: #fff;font: 18px "microsoft yahei";height: 40px;line-height: 40px;}
+.Login_bd p input{cursor: pointer; display: block;background: #dc0f50;text-align: center;color: #fff;font: 18px "microsoft yahei";height: 40px;line-height: 40px;width: 305px}
 .Login_bd2{display: none; height: 380px;margin-top: -1px;overflow: hidden;border: 1px solid #e5e5e5;padding: 20px 0 0 70px;}
 .Login_bd2 strong{height: 21px;line-height: 21px;color: #999;font: 12px "microsoft yahei";display: block;font-weight: normal;}
 .font2{background: url(../img/ling.png) no-repeat;height: 30px;line-height: 30px;padding: 0 32px;color: #e92d2f;font: 12px "microsoft yahei";display: block;width: 280px;}
 .Login_bd2_l1 input,.Login_bd2_l2 input{width: 150px;float: left;height: 28px;line-height: 28px;padding: 5px 0 5px 40px;border: 1px solid#d6d6d6;color: #666;}
-.Login_bd2_l2 img,.li2 img{width: 110px;height: 40px;}
+.Login_bd2_l2 img{width: 110px;height: 40px;}
+.li2 span{font-size: 40px;letter-spacing: 8px;background: orange;cursor: pointer}
 .Login_bd2_l4 input{width: 260px;float: left;height: 28px;line-height: 28px;padding: 5px 0 5px 40px;border: 1px solid#d6d6d6;color: #666;}
 
 /*Login_main结束*/

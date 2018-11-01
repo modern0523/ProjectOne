@@ -7,8 +7,11 @@
 		<meta charset="utf-8" />
 		<title>惠家有网上超市</title>
 		<link rel="stylesheet" href="{% static 'css/Css.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
 		<script src="{% static 'js/jquery-1.12.0.js' %}"></script>
 		<script src="{% static 'js/js.js' %}"></script>
+        <script src="{% static 'js/swiper.js' %}"></script>
+        <script src="{% static 'js/mylunbo.js' %}"></script>
 {#        <script src="{% static 'js/rename_img_src.js' %}"></script>#}
 	</head>
     <body>
@@ -18,8 +21,15 @@
 				<a class="f1">收藏</a>
 				<div class="f2">
 					<a>首页</a>
-					<a id="index_login" href="{% url 'HuiJiaYou:login' %}">请登录</a>
-					<a id="index_regist" href="{% url 'HuiJiaYou:register' %}">免费注册</a>
+
+                    {% if get_del %}
+                        <a id="index_login" href="#">{{ get_del }}</a>
+					    <a id="index_regist" href="{% url 'HuiJiaYou:loginout' %}">退出</a>
+                    {% else %}
+                        <a id="index_login" href="{% url 'HuiJiaYou:login' %}">请登录</a>
+					    <a id="index_regist" href="{% url 'HuiJiaYou:register' %}">免费注册</a>
+                    {% endif %}
+
 					<span>|</span>
 					<font class="_font">购物车
 						<a>0</a>件
@@ -88,7 +98,7 @@
                  		</div>
                  	</span>
                     <ul class="navlists_ul">
-                    	<li><a href="#">首页</a></li>
+                    	<li><a href="">首页</a></li>
                     	<li><a href="#">TV直播</a></li>
                     	<li><a href="#">品牌惠</a></li>
                     	<li><a href="#">惠家有APP</a></li>
@@ -103,18 +113,27 @@
 		     <div class="main">
 		     	<div class="main_top">
 		     		<div class="main_top_1">
-		     			<div class="lunbo">
-		     				<ul id="lunbo_list">
 
-		     				</ul>
-		     				<div id="lunbo_list2">
-		     				<ul>
+                        {#顶部轮播大图#}
+		     			<div class="swiper-container" id="lunbo1">
+                            <div class="swiper-wrapper">
+                                {% for wheel in wheels %}
+                                    <div class="swiper-slide">
+                                        <img src="{{ wheel.img }}">
+                                    </div>
 
-		     				</ul>
-		     				</div>
-		     				<div id="lunbo_list_left">&lt;</div>
-		     				<div id="lunbo_list_right">&gt;</div>
+                                {% endfor %}
+                                <div id="lunbo_list2">
+                                <ul>
+
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
 		     			</div>
+
 		     			<div class="ad1">
 		     		    	<img src="{% static 'img/b2.jpg' %}">
 		     		    </div>
@@ -125,8 +144,14 @@
 		     		<div class="main_top_2">
 		     			<div class="main_right1">
 		     				<span><img src="{% static 'img/main_right1.png' %}"></span>
-		     				<p>hi！欢迎来到惠家有</p>
-		     				<a id="index_login2" href="{% url 'HuiJiaYou:login' %}">登 录</a>
+
+                            {% if get_del %}
+		     				    <p>{{ get_del }}</p>
+                            {% else %}
+                                <p>hi！欢迎来到惠家有</p>
+                            {% endif %}
+
+                            <a id="index_login2" href="{% url 'HuiJiaYou:login' %}">登 录</a>
 		     				<i id="index_regist2"><a href="{% url 'HuiJiaYou:register' %}">免费注册</a></i>
 		     			</div>
 		     			<div class="main_right2">
@@ -171,13 +196,36 @@
 		     		<div class="live_list_top">
 		     			<h2>TV直播-已省30元</h2>
 		     		</div>
-		     	    <div class="live_list_bottom">
-		     	    	<ul id="live_list_bottom">
 
-		     	    	</ul>
-		     	    	<a class="prev1">&lt;</a>
-		     	    	<a class="prev2">&gt;</a>
-		     	    </div>
+                    {#分组轮播图#}
+                    <div class="swiper-container" id="lunbo2">
+                        <div class="swiper-wrapper">
+                            {% for group in groups %}
+                                <div class="swiper-slide">
+                                    <img src="{{ group.img }}">
+                                    <span>正在直播</span>
+                                    <b>{{ group.name }}</b>
+                                    <font>
+                                        ¥{{ group.price }}
+                                        <i>¥{{ group.oldprice }}</i>
+                                    </font>
+
+                                </div>
+
+                            {% endfor %}
+
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+{#		     	    <div class="live_list_bottom">#}
+{#		     	    	<ul id="live_list_bottom">#}
+{##}
+{#		     	    	</ul>#}
+{#		     	    	<a class="prev1"></a>#}
+{#		     	    	<a class="prev2"></a>#}
+{#		     	    </div>#}
 		     	</div>
 		     	<div class="panic_list">
 		     	    <div class="panic_list_top">
@@ -874,5 +922,8 @@
 
 
 </ul></div>
+
     </body>
+
+
 </html>

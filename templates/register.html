@@ -6,13 +6,15 @@
 		<meta charset="UTF-8">
 		<title>注册</title>
 		 <script src="{% static 'js/jquery-1.12.3.min.js' %}"></script>
-		<script src="{% static 'js/jquery.cookie.js' %}"></script>
-		 <script src="{% static 'js/Regist.js' %}"></script>
-	    <script src="{% static 'js/jquery.idcode.js' %}"></script>
+{#		<script src="{% static 'js/jquery.cookie.js' %}"></script>#}
+{#		 <script src="{% static 'js/Regist.js' %}"></script>#}
+{#	    <script src="{% static 'js/jquery.idcode.js' %}"></script>#}
           <link href="{% static 'css/goodsCss.css'%}"  rel="stylesheet" type="text/css"/>
 {#	    <script src="{% static 'js/rename_img_src.js' %}"></script>#}
+        <script src="{% static 'js/mycode.js' %}"></script>
     </head>
     <body>
+
 
 		  <div class="wrap_top">
 			<div class="wrap_top_p">
@@ -106,46 +108,50 @@
 
 	         <div class="Regist_main">
 	         	<div class="Regist_main_1">
-	         		<ul>
+                    <form action="{% url 'HuiJiaYou:register' %}" method="post">
+                        {% csrf_token %}
+                        <ul>
 	         			<li class="li1">
 	         				<b>
 	         					<i>*</i>手机号
 	         				</b>
-	         				<input id="li1" type="tel" placeholder="请输入11位有效手机号">
+	         				<input id="li1" type="tel" placeholder="请输入11位有效手机号" name="tel">
 	         				<em id="li1_em"></em>
 	         			</li>
 	         			<li class="li2">
 	         				<b>
 	         					<i>*</i>图片验证码
 	         				</b>
-	         				<input type="text" id="Txtidcode" class="txtVerification" placeholder="请输入图片验证码">
-	         				<span id="idcode"><div id="ehong-code" class="ehong-idcode-val ehong-idcode-val5" href="#" onblur="return false" onfocus="return false" oncontextmenu="return false" onclick="$.idcode.setCode()"><font color="#BF0C43">2</font><font color="#BC3087">w</font><font color="#E69A2A">8</font><font color="#16BDB5">F</font></div><span id="ehong-code-tip-ck" class="ehong-code-val-tip" onclick="$.idcode.setCode()"></span></span>
-	         				<em>请输入正确验证码</em>
+	         				<input type="text" id="Txtidcode" class="txtVerification" placeholder="请输入图片验证码" name="passcode">
+                            <span></span>
+{#	         				<span id="idcode"><div id="ehong-code" class="ehong-idcode-val ehong-idcode-val5" href="#" onblur="return false" onfocus="return false" oncontextmenu="return false" onclick="$.idcode.setCode()"><font color="#BF0C43">2</font><font color="#BC3087">w</font><font color="#E69A2A">8</font><font color="#16BDB5">F</font></div><span id="ehong-code-tip-ck" class="ehong-code-val-tip" onclick="$.idcode.setCode()"></span></span>#}
+	         				<em>验证码错误</em>
 	         			</li>
 
 	         			<li class="li3">
 	         				<b>
 	         					<i>*</i>设置密码
 	         				</b>
-	         				<input type="password" id="passwd" placeholder="不能为空且只能为英文或者数字或者下划线">
+	         				<input type="password" id="passwd" name="password" placeholder="至少设置８位">
 	         				<em id="passwd_em"></em>
 	         			</li>
-	         			<li class="li4">
-	         				<b>
-	         					<i>*</i>确认密码
-	         				</b>
-	         				<input type="password" id="passwd2" placeholder="请输入确认密码">
-	         				<em>密码为空或与上密码不匹配</em>
-	         			</li>
-	         			<li class="li5">
-	         				<b>
-	         					<i>*</i>验证码
-	         				</b>
-	         				<input type="text">
-	         				<button>获取验证码</button>
-	         				<em></em>
-	         			</li>
+{#	         			<li class="li4">#}
+{#	         				<b>#}
+{#	         					<i>*</i>确认密码#}
+{#	         				</b>#}
+{#	         				<input type="password" id="passwd2" placeholder="请输入确认密码">#}
+{#	         				<em>密码为空或与上密码不匹配</em>#}
+{#	         			</li>#}
+{#	         			<li class="li5">#}
+{#	         				<b>#}
+{#	         					<i>*</i>验证码#}
+{#	         				</b>#}
+{#	         				<input type="text">#}
+{#	         				<button>获取验证码</button>#}
+{#	         				<em></em>#}
+{#	         			</li>#}
 	         		</ul>
+
 	         		<p>
 	         			<label>
 	         				<input type="checkbox" checked="checked">我以阅读并同意
@@ -154,10 +160,11 @@
 	         			</label>
 	         		</p>
 	         		<p class="p2">
-	         			<a id="butn">注册</a>
+	         			<input id="butn"  type="submit" value="注册">
 	         		</p>
+                    </form>
 	         		<font>
-	         			<a id="Aledy">我已注册，立即登录</a>
+	         			<a id="Aledy" href="/login/">我已注册，立即登录</a>
 	         		</font>
 	         	</div>
 	         	<div class="Regist_main_2">
@@ -313,5 +320,8 @@
 
 
 </ul></div>
+
+
+
     </body>
 </html>
