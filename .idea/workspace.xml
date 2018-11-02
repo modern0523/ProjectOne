@@ -2,215 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70bfa2d3-8e77-4f18-a9bf-96a33dad8e38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HuiJiaYou/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/CarShow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/Css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/goodsCss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/jquery.idcode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/100.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/101.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/102.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/103.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/104.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/105.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/106.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/107.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/108.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/109.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/110.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/111.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/112.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/113.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/114.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/115.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/3.0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/3.1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/3.2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/3.3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/38.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/39.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/41.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/42.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/43.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/46.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/48.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/51.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/52.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/53.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/54.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/55.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/56.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/57.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/58.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/59.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/60.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/61.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/62.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/63.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/64.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/65.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/66.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/67.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/68.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/69.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/70.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/71.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/72.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/73.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/74.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/75.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/76.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/77.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/78.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/79.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/80.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/81.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/82.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/83.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/84.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/85.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/86.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/87.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/88.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/89.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/91.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/92.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/93.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/94.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/95.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/96.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/97.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/98.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/99.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/ad1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/ad2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/ad3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/b1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/b2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/b3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/biao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/biao_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/buttom0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/buttom2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/buttom3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/buttom4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/buttom5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/buttom_ph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/car.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/car2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/error_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/ewm011.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/ewm022.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/h2_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/jia_jian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/kongCar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/ling.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/login001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/main_right1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/mobile1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/slide1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/slide1_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/slide2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/slide2_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/slide3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/slide3_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/slide4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/spinner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/CarShow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/Loginjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/Regist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/goodsJs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-1.12.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-1.12.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-1.8.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.idcode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/rename_img_src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/json/goods.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/json/lunbo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/goods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/showCart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projectOne.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectOne.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/my_js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectOne/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projectOne/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectOne/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projectOne/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuiJiaYou/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HuiJiaYou/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuiJiaYou/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HuiJiaYou/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuiJiaYou/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HuiJiaYou/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/goodsCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/goodsCss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/goodsJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/goodsJs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/goods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +30,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="project@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="project@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="project@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="project: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -239,65 +56,75 @@
     <session id="1945422274">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
-          <entry key="html" value="13" />
-          <entry key="jpg" value="15" />
-          <entry key="js" value="14" />
-          <entry key="json" value="4" />
-          <entry key="png" value="3" />
-          <entry key="py" value="7" />
-          <entry key="sql" value="1" />
+          <entry key="HuiJiaYou_user" value="18" />
+          <entry key="css" value="22" />
+          <entry key="django_session" value="15" />
+          <entry key="group_lunbo" value="11" />
+          <entry key="html" value="31" />
+          <entry key="index_lunbo" value="3" />
+          <entry key="jpg" value="57" />
+          <entry key="js" value="53" />
+          <entry key="json" value="7" />
+          <entry key="png" value="4" />
+          <entry key="py" value="13" />
+          <entry key="sql" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
-          <entry key="HTML" value="13" />
-          <entry key="Image" value="18" />
-          <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="14" />
-          <entry key="Python" value="7" />
-          <entry key="Scratch" value="1" />
+          <entry key="CSS" value="22" />
+          <entry key="Database Element" value="47" />
+          <entry key="HTML" value="31" />
+          <entry key="Image" value="61" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="53" />
+          <entry key="Python" value="13" />
+          <entry key="Scratch" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="885" />
-          <entry key="js" value="72" />
-          <entry key="py" value="350" />
+          <entry key="cell" value="16" />
+          <entry key="css" value="255" />
+          <entry key="html" value="2661" />
+          <entry key="js" value="1067" />
+          <entry key="json" value="7" />
+          <entry key="py" value="2307" />
+          <entry key="sql" value="18" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="885" />
-          <entry key="JavaScript" value="72" />
-          <entry key="Python" value="350" />
+          <entry key="CSS" value="255" />
+          <entry key="HTML" value="2661" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="1067" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="2307" />
+          <entry key="Scratch" value="34" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projectOne/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="120" column="41" lean-forward="true" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HuiJiaYou/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            <state relative-caret-position="225">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -305,11 +132,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HuiJiaYou/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+            <state relative-caret-position="290">
+              <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <marker date="1541161497824" expanded="true" signature="202:339" ph="..." />
+                <marker date="1541161497824" expanded="true" signature="371:604" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -317,26 +148,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/goods.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-400">
-              <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
+            <state relative-caret-position="261">
+              <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#span#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/goodsJs.js">
+        <entry file="file://$PROJECT_DIR$/static/js/my_js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="222" lean-forward="true" selection-start-line="222" selection-end-line="222" />
+            <state relative-caret-position="100">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HuiJiaYou/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="211">
+              <caret line="94" column="17" lean-forward="true" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#582#1153#0" />
+                <element signature="e#1183#1411#0" />
+                <element signature="e#1440#2032#0" />
+                <marker date="1541162605583" expanded="true" signature="1178:1183" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="204" column="73" lean-forward="true" selection-start-line="204" selection-start-column="73" selection-end-line="204" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/goodsCss.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="86">
+              <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -347,16 +208,48 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>src</find>
+      <find>butn</find>
+      <find>#butn</find>
+      <find>p2</find>
+      <find>Login_bd2</find>
+      <find>.Login_bd2</find>
+      <find>li2</find>
+      <find>.li2</find>
+      <find>HI</find>
+      <find>a</find>
+      <find>Hi</find>
+      <find>微信</find>
+      <find>footte</find>
+      <find>foote_right</find>
+      <find>form</find>
+      <find>for</find>
+      <find>请登录</find>
+      <find>.lunbo</find>
+      <find>next</find>
+      <find>live</find>
       <find>live_list_bottom</find>
-      <find>Regist_login</find>
+      <find>.swiper-container</find>
+      <find>#lunbo2</find>
+      <find>.Login_bd</find>
+      <find>.Login_main</find>
+      <find>Login_main_2</find>
+      <find>Login_bd</find>
+      <find>Login_bd_l1</find>
+      <find>em</find>
+      <find>.details</find>
+      <find>small</find>
     </findStrings>
+    <replaceStrings>
+      <replace>swiper-container</replace>
+      <replace>#lunbo2</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -364,20 +257,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/projectOne/settings.py" />
         <option value="$PROJECT_DIR$/static/js/rename_img_src.js.py" />
         <option value="$PROJECT_DIR$/static/js/rename_img_src.js" />
-        <option value="$PROJECT_DIR$/HuiJiaYou/views.py" />
         <option value="$PROJECT_DIR$/projectOne/urls.py" />
-        <option value="$PROJECT_DIR$/static/js/js.js" />
-        <option value="$PROJECT_DIR$/HuiJiaYou/urls.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/projectOne/settings.py" />
+        <option value="$PROJECT_DIR$/projectOne/__init__.py" />
         <option value="$PROJECT_DIR$/static/js/Loginjs.js" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/static/js/Regist.js" />
+        <option value="$PROJECT_DIR$/static/js/mycode.js" />
+        <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/templates/showCart.html" />
+        <option value="$PROJECT_DIR$/static/js/js.js" />
+        <option value="$PROJECT_DIR$/static/json/lunbo.json" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a6e01d45-1066-42c9-90b1-bd89b9475844/console.sql" />
+        <option value="$PROJECT_DIR$/static/css/Css.css" />
+        <option value="$PROJECT_DIR$/static/js/mylunbo.js" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/404.html" />
+        <option value="$PROJECT_DIR$/static/css/goodsCss.css" />
+        <option value="$PROJECT_DIR$/HuiJiaYou/models.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/HuiJiaYou/urls.py" />
+        <option value="$PROJECT_DIR$/HuiJiaYou/views.py" />
         <option value="$PROJECT_DIR$/static/js/goodsJs.js" />
+        <option value="$PROJECT_DIR$/static/js/my_js.js" />
         <option value="$PROJECT_DIR$/templates/goods.html" />
       </list>
     </option>
@@ -388,7 +291,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="59" />
     <option name="y" value="25" />
     <option name="width" value="637" />
@@ -402,6 +305,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -412,7 +316,18 @@
             <path>
               <item name="projectOne" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectOne" type="462c0819:PsiDirectoryNode" />
+              <item name="HuiJiaYou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectOne" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectOne" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectOne" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectOne" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectOne" type="b2602c69:ProjectViewProjectNode" />
@@ -423,36 +338,31 @@
             <path>
               <item name="projectOne" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectOne" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectOne" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectOne" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DatabaseDriversLRU" value="sqlite&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project_AXF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/static/json" />
       <recent name="$PROJECT_DIR$/static/img" />
-      <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$/static/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -508,15 +418,9 @@
   <component name="ToolWindowManager">
     <frame x="49" y="25" width="1307" height="590" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20790514" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16284585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.29462364" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32903227" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -524,11 +428,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" weight="0.15019763" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3376344" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32903227" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.15019763" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,44 +449,155 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/20ba9e6c-5dee-4ffb-9dd7-4af2ad59bf90/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/static/img/ewm011.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/rename_img_src.js.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/rename_img_src.js">
+    <entry file="file://$PROJECT_DIR$/templates/showCart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state relative-caret-position="163">
+          <caret line="241" column="26" lean-forward="true" selection-start-line="226" selection-start-column="20" selection-end-line="241" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/slide4.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1780">
+          <caret line="257" column="49" lean-forward="true" selection-start-line="257" selection-start-column="49" selection-end-line="257" selection-end-column="49" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/slide3_3.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/static/json/lunbo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/slide1.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/projectOne/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/b1.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/static/js/swiper.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4475">
+          <caret line="179" column="20" lean-forward="true" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6e01d45-1066-42c9-90b1-bd89b9475844/schema/project/table/index_lunbo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/swiper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="150" column="279" lean-forward="true" selection-start-line="150" selection-start-column="279" selection-end-line="150" selection-end-column="279" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/img/b2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/b3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/img/b4.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/6.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/goods.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="72" column="2" lean-forward="true" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/Css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-560">
+          <caret line="110" column="19" lean-forward="true" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/mylunbo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/Loginjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6e01d45-1066-42c9-90b1-bd89b9475844/schema/project/table/HuiJiaYou_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a6e01d45-1066-42c9-90b1-bd89b9475844/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="124" column="52" lean-forward="true" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://a6e01d45-1066-42c9-90b1-bd89b9475844/schema/project/table/django_session">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/img/1.1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/img/1.2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/1.3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/1.4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/1.5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/1.6.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/img/1.7.jpg">
@@ -584,163 +606,75 @@
     <entry file="file://$PROJECT_DIR$/static/img/1.8.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/91.jpg">
+    <entry file="file://$PROJECT_DIR$/static/img/1.9.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/92.jpg">
+    <entry file="file://$PROJECT_DIR$/static/img/2.0.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/93.jpg">
+    <entry file="file://$PROJECT_DIR$/static/img/2.3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/94.jpg">
+    <entry file="file://$PROJECT_DIR$/static/img/2.4.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/95.jpg">
+    <entry file="file://$PROJECT_DIR$/static/img/2.2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/goods.json">
+    <entry file="file://$PROJECT_DIR$/static/img/2.1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/2.5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/2.6.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/2.7.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/2.8.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/2.9.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuiJiaYou/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="99" column="17" lean-forward="true" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/lunbo.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectOne/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="290">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding>
-            <element signature="e#644#685#0" expanded="true" />
+            <marker date="1541161497824" expanded="true" signature="202:339" ph="..." />
+            <marker date="1541161497824" expanded="true" signature="371:604" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/jquery-1.12.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-925">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/Css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4574">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectOne/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="120" column="41" lean-forward="true" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HuiJiaYou/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="189" column="9" lean-forward="true" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1949">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/jquery.idcode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/Loginjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="171" column="41" selection-start-line="171" selection-start-column="41" selection-end-line="171" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#label#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/Regist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="68" column="18" lean-forward="true" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/CarShow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/showCart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="90" column="60" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/goodsJs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="222" lean-forward="true" selection-start-line="222" selection-end-line="222" />
+        <state relative-caret-position="587">
+          <caret line="233" column="4" lean-forward="true" selection-start-line="233" selection-start-column="4" selection-end-line="233" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/goods.html">
+    <entry file="file://$PROJECT_DIR$/static/css/goodsCss.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-400">
-          <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
+        <state relative-caret-position="86">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a6e01d45-1066-42c9-90b1-bd89b9475844/schema/project/table/group_lunbo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HuiJiaYou/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="225">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -749,8 +683,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+        <state relative-caret-position="175">
+          <caret line="204" column="73" lean-forward="true" selection-start-line="204" selection-start-column="73" selection-end-line="204" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#span#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/my_js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuiJiaYou/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="94" column="17" lean-forward="true" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#582#1153#0" />
+            <element signature="e#1183#1411#0" />
+            <element signature="e#1440#2032#0" />
+            <marker date="1541162605583" expanded="true" signature="1178:1183" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
