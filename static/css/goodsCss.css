@@ -47,7 +47,7 @@
 .main{width: 1200px;height: 11600px;margin: 0 auto;}
 .details{width: 1200px;height: 11550px;}
 .details h2{width: 1200px;height: 40px;display: block;line-height: 40px;}
-.details h2 a{display: block;width: 50px;height: 16px;color: #333;font-size: 12px;text-decoration: none;}
+.details h2 a{width: 40px;height: 16px;color: #333;font-size: 10px;text-decoration: none;}
 .show{width: 1141px;height: 570px;margin-bottom: 20px;padding: 29px;border: 1px solid #d6d6d6;}
 .show_left{width: 545px;height: 510px;float: left;}
 .small,.small div,.small div ul{width: 64px;height: 465px;float: left;}
@@ -56,6 +56,7 @@
 .small div ul li img:hover{border: 1px solid #dc0f50;}
 .small a{display: block;width: 64px;height: 9px;}
 .big{width: 300px;height: 300px;float: left;margin-bottom: 20px;margin-left: 50px;margin-top: 45px;position: relative;}
+.big img{width: 400px;height: 400px;}
 /*商品放大镜*/
 #smallArea{ display: none;z-index: 1000; background: rgba(100,200,120,0.3); position: absolute;left: 0;top: 0;cursor: pointer;}
 #bigArea{display: none; z-index: 1000; overflow: hidden; width: 400px;height: 400px;background: rgba(100,200,120,0.3);position: absolute;left: 870px;top: 280px;}

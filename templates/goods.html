@@ -11,6 +11,7 @@
         <script src="{% static 'js/goodsJs.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/jquery.spinner.js' %}"></script>
         <link href="{% static 'css/goodsCss.css' %}"  rel="stylesheet" type="text/css"/>
+        <script src="{% static 'js/my_js.js' %}"></script>
 {#	    <script src="{% static 'js/rename_img_src.js' %}"></script>#}
     </head>
     <body>
@@ -110,59 +111,51 @@
 	       <div class="main">
 	       	<div class="details">
 	       		<h2><a>全部商品</a></h2>
+{#            商品详情展示#}
 	       		<div class="show">
 	       			<div class="show_left">
 	       				<div class="small">
 	       					<a></a>
 	       					<div>
 	       						<ul id="small_ul">
-	       							<li class="ul1">
+                                    {% for showgood in showgoods %}
+                                        <li class="ul1">
+                                            <img src="{{ showgood.img }}" alt="">
+                                        </li>
+                                    {% endfor %}
 
-	       							</li>
-	       							<li class="ul2">
-
-	       							</li>
-	       							<li class="ul3">
-
-	       							</li>
-	       							<li class="ul4">
-
-	       							</li>
-	       							<li class="ul5">
-
-	       							</li>
-	       							<li class="ul6">
-
-	       							</li>
-	       						</ul>
+                                </ul>
 	       					</div>
 	       					<a></a>
 	       				</div>
 	       				<div class="big" id="smallImg">
+                            <img src="{{ showgoods.first.img }}" alt="">
+
 	       					<div id="smallArea" style="width: 150px; height: 150px;"></div>
 	       				</div>
 	       			    <div id="bigArea" style="">
-	    	                <img id="bigImg" src="{% static '' %}">
+	    	                <img id="bigImg" src="{{showgoods.first.img  }}">
 	                	</div>
 	       			</div>
+{#                商品详情展示结束#}
 	       			<div class="show_right">
 	       				<div class="buy">
 	       					<p class="price">
 	       					</p>
 	       				    <p class="num">
 	       				    	<b>商品编号</b>
-	       				    	<span>147612</span>
+	       				    	<span>{{ showgoods.first.price }}</span>
 	       				    </p>
 	       				    <p class="shou">
 	       				    	<b>月销</b>
-	       				    	<span>256件</span>
+	       				    	<span>{{ showgoods.first.oldprice }}</span>
 	       				    </p>
 	       				    <p class="gift">
 	       				    	<b>促销</b>
 	       				    	<span>
 	       				    		<label>
-	       				    			<i>赠品</i>
-	       				    			<font><a>赠品营销韩束雪莲花补水喷雾;</a></font>
+	       				    			<i>热销产品名称</i>
+	       				    			<font><a>{{ showgoods.first.name }}</a></font>
 	       				    		</label>
 	       				    	    <label id="label2">
 	       				    	    	<i>特价</i>
@@ -186,9 +179,9 @@
 
 
 
-	       				    <b id="spinner_b">购买数量</b>
-	       				    <input type="text" class="spinnerExample" id="spinnerExample" value="1">
-	       				    <p id="showp" style="display: none; width: 100px;height: 22px;color: red; position: relative;top: -22px;left: 150px;font-size: 12px;line-height: 22px;">数量不能为空</p>
+	       				    <b id="spinner_b">购买</b>
+	       				    <input type="text" class="spinnerExample" id="spinnerExample">
+	       				    <p id="showp" style="display: block; width: 100px;height: 22px;color: red; position: relative;top: -22px;left: 150px;font-size: 12px;line-height: 22px;"></p>
 
 
 

@@ -202,7 +202,9 @@
                         <div class="swiper-wrapper">
                             {% for group in groups %}
                                 <div class="swiper-slide">
-                                    <img src="{{ group.img }}">
+                                    <a href="{% url 'HuiJiaYou:goods' group.typeid %}">
+                                        <img src="{{ group.img }}">
+                                    </a>
                                     <span>正在直播</span>
                                     <b>{{ group.name }}</b>
                                     <font>

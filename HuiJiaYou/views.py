@@ -44,7 +44,8 @@ def login(request):
 
             request.session['tel']=login_tel
             return redirect('HuiJiaYou:index')
-
+        else:
+            return render(request,'404.html')
 
 
 
@@ -89,9 +90,14 @@ def register(request):
         return redirect('HuiJiaYou:index')
 
 
-def goods(request):
+def goods(request,typeid):
+    showgoods = Grouplunbo.objects.filter(typeid=typeid)
+    goodsdata = {
+        'showgoods':showgoods
+    }
 
-    return render(request,'goods.html')
+
+    return render(request,'goods.html',context=goodsdata)
 
 
 def showCart(request):

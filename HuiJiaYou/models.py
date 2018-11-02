@@ -17,5 +17,6 @@ class Grouplunbo(models.Model):
     name = models.CharField(max_length=256)
     price = models.CharField(max_length=10)
     oldprice = models.CharField(max_length=10)
+    typeid = models.CharField(max_length=8,default=0)
     class Meta:
         db_table='group_lunbo'
