@@ -1,4 +1,5 @@
 import random
+import uuid
 
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
@@ -12,7 +13,8 @@ def index(request):
     # get_del = request.COOKIES.get('tel')
 
     #session
-    get_del = request.session.get('tel')
+    token = request.session.get('token')
+
 
     #轮播图数据
     wheels = Lunbo.objects.all()
@@ -20,11 +22,14 @@ def index(request):
     #分组图数据
     groups = Grouplunbo.objects.all()
 
-    data = {
-        'get_del':get_del,
-        'wheels':wheels,
-        'groups':groups,
-    }
+    data = {}
+    data['wheels'] = wheels
+    data['groups'] = groups
+    # 在还未登录注册下，是没有token的,接下来判断
+    if token:
+        user = User.objects.get(token=token)
+        data['get_del'] = user.tel
+
 
     return render(request,'index.html',context=data)
 
@@ -42,7 +47,12 @@ def login(request):
         if users.exists():
             user = users.first()
 
-            request.session['tel']=login_tel
+            #更新token
+            user.token = str(uuid.uuid5(uuid.uuid4(),'login'))
+            user.save()
+
+
+            request.session['token']=user.token
             return redirect('HuiJiaYou:index')
         else:
             return render(request,'404.html')
@@ -77,6 +87,7 @@ def register(request):
 
         user.tel = tel
         user.password = password
+        user.token = str(uuid.uuid5(uuid.uuid4(),'register'))
         user.save()
 
         #cookie
@@ -85,7 +96,7 @@ def register(request):
         # return response
 
         #session
-        request.session['tel']=tel
+        request.session['token']=user.token
         # request.session.set_expiry(60)
         return redirect('HuiJiaYou:index')
 
@@ -95,7 +106,6 @@ def goods(request,typeid):
     goodsdata = {
         'showgoods':showgoods
     }
-
 
     return render(request,'goods.html',context=goodsdata)
 

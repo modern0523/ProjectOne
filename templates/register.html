@@ -6,12 +6,14 @@
 		<meta charset="UTF-8">
 		<title>注册</title>
 		 <script src="{% static 'js/jquery-1.12.3.min.js' %}"></script>
-{#		<script src="{% static 'js/jquery.cookie.js' %}"></script>#}
+		<script src="{% static 'js/jquery.cookie.js' %}"></script>
 {#		 <script src="{% static 'js/Regist.js' %}"></script>#}
-{#	    <script src="{% static 'js/jquery.idcode.js' %}"></script>#}
+	    <script src="{% static 'js/jquery.idcode.js' %}"></script>
           <link href="{% static 'css/goodsCss.css'%}"  rel="stylesheet" type="text/css"/>
 {#	    <script src="{% static 'js/rename_img_src.js' %}"></script>#}
         <script src="{% static 'js/mycode.js' %}"></script>
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+{#        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">#}
     </head>
     <body>
 
@@ -115,14 +117,14 @@
 	         				<b>
 	         					<i>*</i>手机号
 	         				</b>
-	         				<input id="li1" type="tel" placeholder="请输入11位有效手机号" name="tel">
+	         				<input id="li1" type="tel" placeholder="请输入11位有效手机号" name="tel" required="required">
 	         				<em id="li1_em"></em>
 	         			</li>
 	         			<li class="li2">
 	         				<b>
 	         					<i>*</i>图片验证码
 	         				</b>
-	         				<input type="text" id="Txtidcode" class="txtVerification" placeholder="请输入图片验证码" name="passcode">
+	         				<input type="text" id="Txtidcode" class="txtVerification" placeholder="请输入图片验证码" name="passcode" required="required">
                             <span></span>
 {#	         				<span id="idcode"><div id="ehong-code" class="ehong-idcode-val ehong-idcode-val5" href="#" onblur="return false" onfocus="return false" oncontextmenu="return false" onclick="$.idcode.setCode()"><font color="#BF0C43">2</font><font color="#BC3087">w</font><font color="#E69A2A">8</font><font color="#16BDB5">F</font></div><span id="ehong-code-tip-ck" class="ehong-code-val-tip" onclick="$.idcode.setCode()"></span></span>#}
 	         				<em>验证码错误</em>
@@ -132,16 +134,17 @@
 	         				<b>
 	         					<i>*</i>设置密码
 	         				</b>
-	         				<input type="password" id="passwd" name="password" placeholder="至少设置８位">
+	         				<input type="password" id="passwd" name="password" placeholder="至少设置８位" required="required">
 	         				<em id="passwd_em"></em>
 	         			</li>
-{#	         			<li class="li4">#}
-{#	         				<b>#}
-{#	         					<i>*</i>确认密码#}
-{#	         				</b>#}
-{#	         				<input type="password" id="passwd2" placeholder="请输入确认密码">#}
-{#	         				<em>密码为空或与上密码不匹配</em>#}
-{#	         			</li>#}
+	         			<li class="li4">
+	         				<b>
+	         					<i>*</i>确认密码
+	         				</b>
+	         				<input type="password" id="passwd2" placeholder="请输入确认密码" required="required">
+	         				<em>密码为空或与上密码不匹配</em>
+	         			</li>
+
 {#	         			<li class="li5">#}
 {#	         				<b>#}
 {#	         					<i>*</i>验证码#}

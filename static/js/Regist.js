@@ -20,20 +20,20 @@ $(function(){
 					            $("#li1").next().hide();
 	    			}})
 	    		//图片验证码
-	    		$.idcode.setCode();
-	    		$("#Txtidcode").on({
-	    			"blur":function(){
-	    			var IsBy=$.idcode.validateCode()
-	    			if(IsBy){
-	    			}
-	    			else{
-	    			
-	    				 $("#Txtidcode").parent().find("em").show();
-	    			}
-	    		},
-	    			"focus":function(){
-	    				 $("#Txtidcode").parent().find("em").hide();
-	    			}})
+	    		// $.idcode.setCode();
+	    		// $("#Txtidcode").on({
+	    		// 	"blur":function(){
+	    		// 	var IsBy=$.idcode.validateCode()
+	    		// 	if(IsBy){
+	    		// 	}
+	    		// 	else{
+	    		//
+	    		// 		 $("#Txtidcode").parent().find("em").show();
+	    		// 	}
+	    		// },
+	    		// 	"focus":function(){
+	    		// 		 $("#Txtidcode").parent().find("em").hide();
+	    		// 	}})
 	    	    //密码验证
 	    	    $("#passwd").on({
 	    	    	"blur":function(){
@@ -71,8 +71,8 @@ $(function(){
 	    			if(!$("#li1").val()||!$("#Txtidcode").val()||!$("#passwd").val()||!$("#passwd2").val()){
 	    				$("#li1").css('border', '1px solid red');
 					    $("#li1").next().show();
-	    				$("#Txtidcode").css('border', '1px solid red');
-					    $("#Txtidcode").parent().find("em").hide();
+	    				// $("#Txtidcode").css('border', '1px solid red');
+					    // $("#Txtidcode").parent().find("em").hide();
 					    $("#passwd").css('border', '1px solid red');
 					    $("#passwd").next().show();
 					    $("#passwd2").css('border', '1px solid red');
@@ -80,29 +80,29 @@ $(function(){
 					    return;//如果密码用户名为空  则不提交
 	    			}
 	    			
-	    		// Regist 注册开始啦
-	    		var users=$.cookie("users")?JSON.parse($.cookie("users")):[];
-	    		for(var i=0;i<users.length;i++){
-	    			if(users[i].name==$("#li1").val()){
-	    				$("#li1").next().show();
-					    $("#li1_em").html("亲！该账号已经存在哟");
-					    return;
-	    			}
-	    		}
-	    		var user={
-	    				name:$("#li1").val(),
-	    				passwd:$("#passwd").val()
-	    			}
-	    			users.push(user);
-	    			$.cookie("users",JSON.stringify(users),{expires:7,path:"/"});
-	    			console.log($.cookie("users"));
-	    		   var timer=setInterval(function(){
-	    		   	location.href="/login/";
-	    		   },2000)
-	    		   alert("注册成功！")
-
-	    		})
-	    		$("#Aledy").click(function(){
-	    				location.href="/login/";
-	    			})
+	    		// // Regist 注册开始啦
+	    		// var users=$.cookie("users")?JSON.parse($.cookie("users")):[];
+	    		// for(var i=0;i<users.length;i++){
+	    		// 	if(users[i].name==$("#li1").val()){
+	    		// 		$("#li1").next().show();
+				// 	    $("#li1_em").html("亲！该账号已经存在哟");
+				// 	    return;
+	    		// 	}
+	    		// }
+	    		// var user={
+	    		// 		name:$("#li1").val(),
+	    		// 		passwd:$("#passwd").val()
+	    		// 	}
+	    		// 	users.push(user);
+	    		// 	$.cookie("users",JSON.stringify(users),{expires:7,path:"/"});
+	    		// 	console.log($.cookie("users"));
+	    		//    var timer=setInterval(function(){
+	    		//    	location.href="/login/";
+	    		//    },2000)
+	    		//    alert("注册成功！")
+				//
+	    		// })
+	    		// $("#Aledy").click(function(){
+	    		// 		location.href="/index/";
+	    		// 	})
 })

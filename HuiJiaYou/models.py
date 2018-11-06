@@ -4,6 +4,7 @@ from django.db import models
 class User(models.Model):
     tel = models.CharField(max_length=256)
     password = models.CharField(max_length=256)
+    token = models.CharField(max_length=256,default=0)
 
 
 class Lunbo(models.Model):

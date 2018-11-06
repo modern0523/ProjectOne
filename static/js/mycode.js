@@ -27,7 +27,6 @@ $(function () {
            str2 += str1[parseInt(Math.random()*str1.length)]
         }
         $(".li2 span").html(str2)
-        console.log(str2)
 
     });
     //因为打开网页时还未点击，所以要默认一次点击事件
@@ -45,8 +44,6 @@ $(function () {
         {
             $(".li2 em").show();
         }
-
-
     },500)
 
 
