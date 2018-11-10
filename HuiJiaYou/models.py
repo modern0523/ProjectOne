@@ -21,3 +21,12 @@ class Grouplunbo(models.Model):
     typeid = models.CharField(max_length=8,default=0)
     class Meta:
         db_table='group_lunbo'
+
+
+class AddCart(models.Model):
+    user = models.ForeignKey(User)
+    group_goods = models.ForeignKey(Grouplunbo)
+    number = models.IntegerField()
+    isselect = models.BooleanField(default=False)
+    class Meta:
+        db_table='addCart'

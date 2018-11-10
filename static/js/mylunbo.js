@@ -24,4 +24,20 @@ $(function ()
         autoplay: 1500,
         autoplayDisableOnInteraction: false
     });
+
+
+        $("#Car a").click(function ()
+        {
+
+
+        })
+
+
+
+
+
+
+
+
+
 });

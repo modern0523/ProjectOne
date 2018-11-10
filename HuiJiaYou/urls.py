@@ -9,4 +9,10 @@ urlpatterns = [
     url(r'^loginout/$',views.loginout,name='loginout'),
     url(r'^goods/(\d+)/$',views.goods,name='goods'),
     url(r'^showCart/$',views.showCart,name='showCart'),
+    url(r'^addcart/$',views.addcart,name='addcart'),
+    url(r'^subcart/$',views.subcart,name='subcart'),
+    url(r'^onecheck/$',views.onecheck),
+    url(r'^morecheck/$',views.morecheck),
+    url(r'^delcartgoods/(\d+)/$',views.delcartgoods,name='delcartgoods'),
+
 ]

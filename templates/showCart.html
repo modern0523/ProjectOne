@@ -7,7 +7,10 @@
 		<title>购物车</title>
 		<script src="{% static 'js/jquery-1.12.0.js' %}"></script>
 		<script src="{% static 'js/jquery.cookie.js' %}"></script>
-		<script src="{% static 'js/CarShow.js' %}"></script>
+{#        <script src="{% static 'js/bootstrap.js' %}"></script>#}
+{#		<script src="{% static 'js/CarShow.js' %}"></script>#}
+        <script src="{% static 'js/cart.js' %}"></script>
+{#        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">#}
         <link href="{% static 'css/CarShow.css' %}"  rel="stylesheet" type="text/css"/>
 {#	    <script src="{% static 'js/rename_img_src.js' %}"></script>#}
     </head>
@@ -18,11 +21,23 @@
 				<a class="f1">收藏</a>
 				<div class="f2">
 					<a href="{% url 'HuiJiaYou:index' %}">首页</a>
-					<a href="{% url 'HuiJiaYou:login' %}">请登录</a>
-					<a href="{% url 'HuiJiaYou:register' %}">免费注册</a>
+                    {% if status %}
+                        <a>{{ tel }}</a>
+					    <a href="{% url 'HuiJiaYou:loginout' %}">退出</a>
+                    {% else %}
+                        <a href="{% url 'HuiJiaYou:login' %}">请登录</a>
+					    <a href="{% url 'HuiJiaYou:register' %}">免费注册</a>
+                    {% endif %}
+
 					<span>|</span>
-					<font class="_font">购物车
-						<a href="{% url 'HuiJiaYou:showCart' %}">0</a>件
+					<font class="_font allnum">购物车
+						<a>
+                            {% if num%}
+                                {{ num }}
+                            {% else %}
+                                0
+                            {% endif %}
+                        </a>件
 					</font>
 					<a>我的家有</a>
 					<font class="_font">可用优惠券
@@ -33,7 +48,7 @@
 					<a id="f2_a1">手机版<div class="f1_div"><img style="width: 5px;height: 5px;display: block; position: absolute;top: -10px;" src="{% static 'img/biao.png' %}"><img src="{% static 'img/ewm011.jpg' %}"><em>惠家有APP</em></div></a>
 				</label>
 					<label class="wx">
-					<a id="f2_a2">微信版<div class="f2_div"><img src="{% static 'img/ewm011.jpg' %}"><em>惠家有微信</em></div></a>
+{#					<a id="f2_a2">微信版<div class="f2_div"><img src="{% static 'img/ewm011.jpg' %}"><em>惠家有微信</em></div></a>#}
 				</label>
 				</div>
 			</div>
@@ -55,16 +70,16 @@
 		     		    	<a>海参</a>
 		     		    </p>
 		     		</div>
-		     		<div class="fr">
-		     			<img src="{% static 'img/car.png' %}">
-		     			<a href="{% url 'HuiJiaYou:showCart' %}">我的购物车
-		     				<i id="top_car">0</i>
-		     			</a>
-		     			<div class="ware">
-		     				<img src="{% static 'img/car2.png' %}">
-		     				<p>购物车中还没有商品，赶紧去选购吧</p>
-		     			</div>
-		     		</div>
+{#		     		<div class="fr">#}
+{#		     			<img src="{% static 'img/car.png' %}">#}
+{#		     			<a href="{% url 'HuiJiaYou:showCart' %}">我的购物车#}
+{#		     				<i id="top_car">0</i>#}
+{#		     			</a>#}
+{#		     			<div class="ware">#}
+{#		     				<img src="{% static 'img/car2.png' %}">#}
+{#		     				<p>购物车中还没有商品，赶紧去选购吧</p>#}
+{#		     			</div>#}
+{#		     		</div>#}
 		     	</div>
                  <div class="head_bottom">
 
@@ -114,10 +129,8 @@
 		     	    	<tbody>
 		     	    		<tr id="Cartr">
 		     	    			<th class="check">
-		     	    				<label>
-		     	    					<input type="checkbox" checked="checked">
-		     	    					全选
-		     	    				</label>
+                                    <input type="checkbox" isselect="false">
+                                    全选
 		     	    			</th>
 		     	    		    <th class="good">
 		     	    		    	<span>商品</span>
@@ -127,20 +140,71 @@
 		     	    		    <th class="number">小计</th>
 		     	    		    <th class="control">操作</th>
 		     	    		</tr>
-		     	    	<tr><td colspan="8" style="width: 1140px;height: 114px;text-align: center;line-height: 114px;font-size:40px;color: red;"><img src="{% static 'img/kongCar.jpg' %}">亲，购物车是空的哟...</td></tr></tbody>
-		     	    </table>
-		     	    <div class="content_ft" style="display: none;">
+                            {% for cart in carts %}
+                                <tr class="tr2">
+                                    <td class="td1">
+                                        <input type="checkbox" cartid="{{ cart.id }}" isselect="false">
+                                    </td>
+                                    <td class="td2">
+                                        <a href="{% url 'HuiJiaYou:goods' cart.group_goods.typeid %}">
+                                            <img src="{{ cart.group_goods.img }}" alt="">
+                                            <p>
+                                                <b>{{ cart.group_goods.name }}</b>
+                                            </p>
+                                            <strong>双11爆款促销</strong>
+                                        </a>
+                                    </td>
+                                    <td class="td3">
+                                        <span>
+                                            <i price="{{ cart.group_goods.price }}">￥{{ cart.group_goods.price }}</i>
+                                        </span>
+                                    </td>
+                                    <td class="td4">
+                                        <div>
+                                            <i style="color: red;font-size: 18px" class="down" addid="{{ cart.group_goods.typeid }}">
+                                                -
+                                            </i>
+                                            <input type="text" value="{{ cart.number }}">
+                                            <i style="color: red;font-size: 18px" class="up" addid="{{ cart.group_goods.typeid }}">
+                                                +
+                                            </i>
+                                        </div>
+                                        <span></span>
+                                    </td>
+                                    <td class="td5">
+                                        <i style="color: red;font-size: 20px">￥</i>
+                                        <span></span>
+                                    </td>
+                                    <td class="td6">
+                                        <a href="{% url 'HuiJiaYou:delcartgoods' cart.id %}">删除</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+
+
+
+		     	    	<tr id="lone"><td colspan="8" style="width: 1140px;height: 114px;text-align: center;line-height: 114px;font-size:40px;color: red;"><img src="{% static 'img/kongCar.jpg' %}">亲，购物车是空的哟...</td></tr></tbody>
+                        </tbody>
+                    </table>
+		     	    <div class="content_ft" carts="{{ carts.first }}">
 		     	    	<div class="ft">
-		     	    		<label>
-		     	    			<input type="checkbox" checked="checked">全选
-		     	    		</label>
-		     	    		<a>删除选中的商品</a>
+{#		     	    		<label>#}
+{#		     	    			<input type="checkbox" checked="checked">全选#}
+{#		     	    		</label>#}
+{#		     	    		<a>删除选中的商品</a>#}
 		     	    		<span>
-		     	    			已选择<i id="sumn"></i>件商品
+
+{#                                <i id="sumn">#}
+{#                                    {% if num%}#}
+{#                                        {{ num }}#}
+{#                                    {% else %}#}
+{#                                        0#}
+{#                                    {% endif %}#}
+{#                                </i>件商品#}
 		     	    			<font>
-		     	    				应付款:<b id="sunp"></b>
+		     	    				应付款:<b id="sunp">1111</b>
 		     	    			</font>
-		     	    			<a>去结算</a>
+		     	    			<a style="line-height:43px ">去结算</a>
 		     	    		</span>
 		     	    	</div>
 		     	    </div>
@@ -258,40 +322,40 @@
 
 		        </div>
 		     </div>
-		     <ul class="drift">
-		     	<li class="li_1">
+{#		     <ul class="drift">#}
+{#		     	<li class="li_1">#}
+{##}
+{#		     		<a href="#">#}
+{#		     			<img src="{% static 'img/slide1.png' %}">#}
+{#		     			<div class="drift_1">#}
+{#		     				<img src="{% static 'img/ewm011.jpg' %}">#}
+{#		     			<em>惠家有APP</em>#}
+{#		     			</div>#}
+{##}
+{#		     		</a>#}
+{#		     	</li>#}
+{#		     	<li class="li_2">#}
+{##}
+{#		     		<a href="#">#}
+{#		     			<img src="{% static 'img/slide2.png' %}">#}
+{#		     			<div class="drift_2">#}
+{#		     			<img src="{% static 'img/ewm022.jpg' %}">#}
+{#		     			<em>惠家有微信</em>#}
+{#		     			</div>#}
+{#		     		</a>#}
+{#		     	</li>#}
+{#		     	<li class="li_3">#}
+{##}
+{#		     		<a href="#">#}
+{#		     			<img src="{% static 'img/slide3.png' %}">#}
+{#		     		</a>#}
+{#		     		</li>#}
+{#		     		<a href="#">#}
+{#		     			<img class="drift_img" src="{% static 'img/slide4.png' %}">#}
+{#		     		</a>#}
+{##}
+{#             </ul> #}
 
-		     		<a href="#">
-		     			<img src="{% static 'img/slide1.png' %}">
-		     			<div class="drift_1">
-		     				<img src="{% static 'img/ewm011.jpg' %}">
-		     			<em>惠家有APP</em>
-		     			</div>
-
-		     		</a>
-		     	</li>
-		     	<li class="li_2">
-
-		     		<a href="#">
-		     			<img src="{% static 'img/slide2.png' %}">
-		     			<div class="drift_2">
-		     			<img src="{% static 'img/ewm022.jpg' %}">
-		     			<em>惠家有微信</em>
-		     			</div>
-		     		</a>
-		     	</li>
-		     	<li class="li_3">
-
-		     		<a href="#">
-		     			<img src="{% static 'img/slide3.png' %}">
-		     		</a>
-		     		</li>
-		     		<a href="#">
-		     			<img class="drift_img" src="{% static 'img/slide4.png' %}">
-		     		</a>
-
-
-
-</ul></div>
+    </div>
     </body>
 </html>

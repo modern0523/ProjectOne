@@ -213,23 +213,23 @@ $(function() {
 		//购物车
 
 	//结算
-	$("#closing").click(function() {
-		//获取插件spinner的num
-					
-							location.href = "/showCart/";
-						
-		
-	})
-
-	$("#Regist_login").click(function() {
-		location.href = "/login/";
-	})
-	$("#Regist_regist").click(function() {
-		location.href = "/register/";
-	})
-	$("#Regist_car").click(function() {
-		location.href = "/showCart/";
-	})
+	// $("#closing").click(function() {
+	// 	//获取插件spinner的num
+	//
+	// 						location.href = "/showCart/";
+	//
+	//
+	// })
+	//
+	// $("#Regist_login").click(function() {
+	// 	location.href = "/login/";
+	// })
+	// $("#Regist_regist").click(function() {
+	// 	location.href = "/register/";
+	// })
+	// $("#Regist_car").click(function() {
+	// 	location.href = "/showCart/";
+	// })
 
 
 

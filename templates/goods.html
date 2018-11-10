@@ -12,6 +12,7 @@
         <script type="text/javascript" src="{% static 'js/jquery.spinner.js' %}"></script>
         <link href="{% static 'css/goodsCss.css' %}"  rel="stylesheet" type="text/css"/>
         <script src="{% static 'js/my_js.js' %}"></script>
+        <script src="{% static 'js/my_goods.js' %}"></script>
 {#	    <script src="{% static 'js/rename_img_src.js' %}"></script>#}
     </head>
     <body>
@@ -21,11 +22,22 @@
 				<a class="f1">收藏</a>
 				<div class="f2">
 					<a href="{% url 'HuiJiaYou:index' %}">首页</a>
-					<a href="{% url 'HuiJiaYou:login' %}">请登录</a>
-					<a href="{% url 'HuiJiaYou:register' %}">免费注册</a>
+					{% if status %}
+                        <a>{{ tel }}</a>
+					    <a href="{% url 'HuiJiaYou:loginout' %}">退出</a>
+                    {% else %}
+                        <a href="{% url 'HuiJiaYou:login' %}">请登录</a>
+					    <a href="{% url 'HuiJiaYou:register' %}">免费注册</a>
+                    {% endif %}
 					<span>|</span>
-					<font class="_font">购物车
-						<a href="{% url 'HuiJiaYou:showCart' %}">0</a>件
+					<font class="_font sum">购物车
+						<a>
+                            {% if sum %}
+                                {{ sum }}
+                            {% else %}
+                                0
+                            {% endif %}
+                        </a>件
 					</font>
 					<a>我的家有</a>
 					<font class="_font">可用优惠券
@@ -60,13 +72,22 @@
 		     		</div>
 		     		<div class="fr">
 		     			<img src="{% static 'img/car.png' %}">
-		     			<a href="{% url 'HuiJiaYou:showCart' %}">我的购物车
-		     				<i>0</i>
-		     			</a>
-		     			<div class="ware">
-		     				<img src="{% static 'img/car2.png' %}">
-		     				<p>购物车中还没有商品，赶紧去选购吧</p>
-		     			</div>
+		     			{% if status %}
+                            <a href="{% url 'HuiJiaYou:showCart' %} " class="shownum">我的购物车</a>
+                            <i>
+                                {% if sum%}
+                                    {{ sum }}
+                                {% else %}
+                                    0
+                                {% endif %}
+                            </i>
+                        {% else %}
+                            <a href="{% url 'HuiJiaYou:login' %}">我的购物车</a>
+		     			{% endif %}
+{#		     			<div class="ware">#}
+{#		     				<img src="{% static 'img/car2.png' %}">#}
+{#		     				<p>购物车中还没有商品，赶紧去选购吧</p>#}
+{#		     			</div>#}
 		     		</div>
 		     	</div>
                  <div class="head_bottom">
@@ -159,6 +180,7 @@
 	       				    		</label>
 	       				    	    <label id="label2">
 	       				    	    	<i>特价</i>
+                                        <b style="color: red;font-size: 20px">¥{{ showgoods.first.price }}</b>
 	       				    	    </label>
 	       				    	</span>
 	       				    </p>
@@ -192,8 +214,15 @@
 	       				     	<span class="s3">7天包退换（内衣.生鲜特殊商品除外）</span>
 	       				     </p>
 	       				     <div class="btn">
-	       				     	<a class="a1" id="closing">立即购买</a>
-	       				     	<a class="a2" id="AddCar">加入购物车</a>
+
+                                 {% if status %}
+                                    <a class="a1" id="closing" href="#">立即购买</a>
+                                    <a class="a2 addcart" id="AddCar" goodsid="{{ goodsid }}">加入购物车</a>
+                                 {% else %}
+                                    <a class="a1" id="closing" href="{% url 'HuiJiaYou:login' %}">立即购买</a>
+                                    <a class="a2" id="AddCar" href="{% url 'HuiJiaYou:login' %}">加入购物车</a>
+                                 {% endif %}
+
 	       				     	<span>收藏</span>
 	       				     </div>
 	       				</div>
